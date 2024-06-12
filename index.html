@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./static/css/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+  <script src="./static/js/main.js" defer></script>
+  <script src="./static/js/get.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCALMEfG6AZR-QsqnVJkLJYytc0EZOCZEc&callback=console.debug&libraries=maps,marker&v=beta"></script>
+
+
+</head>
+
+<body content="width=device-width, user-scalable=no" class="flex flex-col items-center w-screen resize-none">
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+  
+
+  <div
+    style="background-image: url('static/images/background.jpg'); background-size: cover; background-repeat: no-repeat;"
+    id="transform"
+    class="flex flex-col md:items-center md:h-[600px] p-10 gap-10 items-end overflow-hidden w-full  h-auto bg-slate-300   ">
+    <header class="md:flex hidden justify-around items-center  w-full text-white">
+      <h1 class="text-4xl font-baion">
+        Essegirent
+      </h1>
+      <ul class="font-bold flex gap-5">
+        <li><a href="./">Home</a></li>
+        <li>FAQ</li>
+        <li>Termini e condizioni</li>
+        <li><a href="./contatti.html">Contatti</a></li>
+      </ul>
+    </header>
+
+    <header class="flex flex-col md:hidden justify-between items-start gap-5 w-full   text-white">
+      <div class="flex items-center justify-between w-full">
+        <h1 class="text-3xl font-baion">
+          essegirent
+        </h1>
+        <svg id="cross" class="h-9 hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.9498 8.46447C17.3404 8.07394 17.3404 7.44078 16.9498 7.05025C16.5593 6.65973 15.9261 6.65973 15.5356 7.05025L12.0001 10.5858L8.46455 7.05025C8.07402 6.65973 7.44086 6.65973 7.05033 7.05025C6.65981 7.44078 6.65981 8.07394 7.05033 8.46447L10.5859 12L7.05033 15.5355C6.65981 15.9261 6.65981 16.5592 7.05033 16.9497C7.44086 17.3403 8.07402 17.3403 8.46455 16.9497L12.0001 13.4142L15.5356 16.9497C15.9261 17.3403 16.5593 17.3403 16.9498 16.9497C17.3404 16.5592 17.3404 15.9261 16.9498 15.5355L13.4143 12L16.9498 8.46447Z"
+              fill="#ffffff"></path>
+          </g>
+        </svg>
+        <svg id="burger" class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+              fill="#ffffff"></path>
+          </g>
+        </svg>
+      </div>
+  
+      <ul style="display: none;" id="menu" class="-translate-y-[200%] font-bold flex flex-col items-start gap-3 ">
+        <li><a href="./">Home</a></li>
+        <li>FAQ</li>
+        <li>Termini e condizioni</li>
+        <li><a href="./contatti.html">Contatti</a></li>
+      </ul>
+    </header>
+
+    <div class="flex  md:flex-row flex-col-reverse w-full items-center justify-center gap-10 md:gap-32">
+      <div class="md:w-[500px] w-[90%] text-3xl pb-5 md:text-4xl text-center md:text-start font-bold text-white text-opacity-90">
+        Dai alla tua vacanza una marcia in più con i noleggi Essegirent
+       
+      </div>
+
+      <div class=" bg-slate-300 p-5 pt-10 w-[100%] md:w-auto px-8 flex flex-col gap-10 rounded-xl bg-opacity-30">
+        <h1 class="font-bold text-white text-4xl">Cerca Veicoli</h1>
+        <div class="flex gap-5 flex-col w-full md:w-auto">
+          <div class="flex flex-col md:flex-row gap-5">
+
+            <div class="relative max-w-sm">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                </svg>
+              </div>
+              <input id="from" datepicker-orientation="bottom" inline-datepicker datepicker-autoselect-today
+                datepicker-autohide readonly type="text"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-[17px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
+                placeholder="inizio noleggio">
+            </div>
+
+          </div>
+          <div class="relative max-w-sm">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </div>
+            <input id="to" datepicker-orientation="bottom" inline-datepicker datepicker-autoselect-today
+              datepicker-autohide readonly type="text"
+              class="bg-gray-50  border-gray-300 text-gray-900 text-[17px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
+              placeholder="fine noleggio">
+
+             
+          </div>
+
+        </div>
+
+        <div id="cerca"
+          class="transform hover:scale-[102%] duration-300 h-10 flex justify-end p-3 items-center bg-orange-400 w-full rounded-md gap-0">
+          <p class="text-white font-bold">Verifica disponibilità</p><svg class="h-6" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="items-center flex gap-0 justify-center -pt-32 flex-wrap -mt-3">
+          <p class="text-white text-xs">Pagamento sicuro</p>
+          <img class="h-10" src="static/images/payment/nexi.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div
+    class="h-18 w-[90%] max-w-[1000px] overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)] mt-10">
+    <div class="h-18 md:h-auto inline-flex overflow-hidden  ">
+      <div id="logos"
+        class="flex items-center overflow-hidden justify-center md:justify-start [&_img]:max-w-none animate-infinite-scroll">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/suzuki.png" alt="swiftui">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/aprilia.png" alt="swiftui">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/btwin.png" alt="swiftui">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/lancia.png" alt="swiftui">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/2560px-Honda_logo.svg.png" alt="swiftui">
+        <img class="h-16 md:h-24 object-scale-down" src="./static/images/loghi/Piaggio_logo_commerciale.svg.png"
+          alt="swiftui">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="font-bold text-3xl flex flex-col max-w-[1000px] justify-start w-[100%] mt-5 items-start">
+    <h2 class="ml-[10%] md:ml-0 md:max-w-[1000px]">
+      Disponibili subito
+    </h2>
+
+    <div
+      class="flex w-full max-w-[1000px] mt-10 flex-col text-justify md:items-start gap-24 overflow-visible items-center justify-center ">
+      <div id="scroll"
+        class="lg:w-[1000px] w-full flex snap-mandatory  gap-3 overflow-x-scroll snap-x md:before:p-0 before:p-10 after:p-10 md:[mask-image:_linear-gradient(to_right,transparent_0,_black_3px,_black_calc(100%-64px),transparent_100%)] md:scrollbar ">
+
+        <div id="product"
+          class="border-2 transform duration-300  object-fill w-96 rounded-2x md:snap-start snap-center rounded-xl m-1">
+          <div class="overflow-hidden w-[280px] rounded-t-xl">
+            <img class="image  h-[180px] w-auto object-cover" src="./static/images/veicle/clx.jpg" alt="">
+          </div>
+          <div class="flex justify-between items-center h-16">
+            <div id=" blogpostTitle" class="name pl-10 font-bold text-xl text-slate-500 whitespace-nowrap">Btwin e-bike
+            </div>
+            <button
+              class="price text-white w-[30%] h-full text-xl p-2  bg-orange-400  rounded-tl-lg rounded-br-lg">35€</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" flex flex-col items-center  justify-start w-full  bg-slate-100 py-10 mt-20">
+    <h2 class="font-bold text-4xl">
+      Reviews
+    </h2>
+
+    <p class="max-w-[600px] w-[80%] font-bold text-center mt-5 text-slate-500">Vogliamo che chi ci ha già scelto parli
+      per noi. Essegirent ha raggiunto un rating di <b class="text-slate-800">4.9/5</b> su Google review. La vostra
+      soddisfazione è per la priorità</p>
+
+    <div
+      class="flex w-full max-w-[1000px] mt-10 flex-col text-justify md:items-start gap-24 overflow-visible items-center justify-center">
+
+      <div id="reviews"
+        class="w-full lg:w-[1000px] p-3 flex snap-mandatory  gap-7 overflow-x-scroll snap-x md:before:p-0 before:p-10 md:after:p-0 md:overflow-hidden after:p-10 scrollbar-hide">
+
+        <div
+          class="review flex flex-col  gap-6 pb-10 bg-white md:min-w-[300px] min-w-[80%] md:w-96 snap-center h-96  shadow-lg rounded-2xl p-8">
+          <div class="flex gap-5">
+            <img class="profile_photo h-12"
+              src="https://lh3.googleusercontent.com/a/ACg8ocKz5sIwO5oBYiD6fxQ5uzL8RdQykLrl-I-hbqcr3MuRtj1Htw=s128-c0x00000000-cc-rp-mo">
+            <div class="flex flex-col gap-1">
+              <h3 class="name font-bold">name</h3>
+              <img class="stars w-20 -ml-1" src="./static/images/stars/5s.png">
+            </div>
+          </div>
+          <p class="testo text-slate-500 text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            quasi autem porro magnam exercitationem sint amet eum accusantium, itaque dolorum perspiciatis odio dolores
+            culpa. Possimus deleniti voluptas magnam placeat commodi.</p>
+        </div>
+
+        <div
+          class="review flex flex-col gap-6 bg-white md:min-w-[300px] min-w-[80%] md:w-96 snap-center h-96  shadow-lg rounded-2xl p-8">
+          <div class="flex gap-5">
+            <img class="profile_photo h-12"
+              src="https://lh3.googleusercontent.com/a/ACg8ocKz5sIwO5oBYiD6fxQ5uzL8RdQykLrl-I-hbqcr3MuRtj1Htw=s128-c0x00000000-cc-rp-mo">
+            <div class="flex flex-col gap-1">
+              <h3 class="name font-bold">name</h3>
+              <img class="stars w-20 -ml-1" src="./static/images/stars/5s.png">
+            </div>
+          </div>
+          <p class="testo text-start text-slate-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            quasi autem porro magnam exercitationem sint amet eum accusantium, itaque dolorum perspiciatis odio dolores
+            culpa. Possimus deleniti voluptas magnam placeat commodi.</p>
+        </div>
+
+        <div
+          class="review flex flex-col gap-6 bg-white md:min-w-[300px] min-w-[80%] md:w-96 snap-center h-96  shadow-lg rounded-2xl p-8">
+          <div class="flex gap-5">
+            <img class="profile_photo h-12"
+              src="https://lh3.googleusercontent.com/a/ACg8ocKz5sIwO5oBYiD6fxQ5uzL8RdQykLrl-I-hbqcr3MuRtj1Htw=s128-c0x00000000-cc-rp-mo">
+            <div class="flex flex-col gap-1">
+              <h3 class="name font-bold">name</h3>
+              <img class="stars w-20 -ml-1" src="./static/images/stars/5s.png">
+            </div>
+          </div>
+          <p class="testo text-slate-500 text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+            quasi autem porro magnam exercitationem sint amet eum accusantium, itaque dolorum perspiciatis odio dolores
+            culpa. Possimus deleniti voluptas magnam placeat commodi.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <a class="cursor-pointer transform ease-linear hover:scale-[102%] duration-100"
+      href="https://www.google.com/search?sca_esv=7008f87381b9388d&sca_upv=1&rlz=1C5CHFA_enIT1106IT1107&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7d-yRVfdNV6hhPVy8AF3s7HpJWLiYQ3QXOYpW5bA6KHsH42rG_jvFbPzrZHx_Mvnf8PAm-El-07Sb_p0ys3umP8TRgppcVI1k07GWeh7E88aCySI2q&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7pgang2t_eGEyEx1HJtrUlh1t8vJJRug0KhBPc6tdkrj3K2WwAh1OnNo6RD9P3pZPT1xmrmiWviL9gtirMVjPC9aUDD4&q=essegirent+Recensioni&hl=it-IT&sa=X&ved=2ahUKEwjBgra978KGAxWb8QIHHf8UMKoQ_4MLegQIHRAL&biw=1440&bih=788&dpr=2">
+      <div
+        class="flex items-center justify-center font-bold h-12 w-auto px-3 bg-orange-400 rounded-md gap-2 mt-10 text-white align-middle">
+        Google Review <svg class="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg></div>
+    </a>
+  </div>
+  </div>
+
+  <div class="font-bold text-2xl flex flex-col max-w-[1000px] justify-center w-[80%]  items-center gap-5 mt-10">
+    <h2 class="text-3xl">Rtiria qui</h2>
+    <p class="text-lg text-center text-slate-500 max-w-[600px]">Scopri l'offerta Essegirent e verifica la disponbilità online. Ritira poi in negozio</p>
+    <gmp-map class="h-96  rounded-xl overflow-hidden" center="37.29061458369057, 13.51820315564262" zoom="15"
+      map-id="47a3e362e4d4b36a">
+      <gmp-advanced-marker class="" position="37.29061458369057, 13.51820315564262"
+        title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </div>
+
+  <div class="relative">
+    <a class="cursor-pointer" href="https://wa.me/3283411322" ><button   class="z-20 text-white flex flex-col shrink-0 grow-0 justify-around 
+                        fixed bottom-0  right-5 rounded-lg
+                        mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10">
+      <div class="p-4 rounded-full border-4 border-white bg-orange-400">
+        <svg class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z"
+              stroke="#ffffff" stroke-width="1.5"></path>
+            <path opacity="0.5" d="M8 10.5H16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+            <path opacity="0.5" d="M8 14H13.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        <path fill-rule="evenodd"
+          d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+          clip-rule="evenodd"></path>
+        </svg>
+      </div>
+
+    </button> </a>
+  </div>
+
+  <footer
+    class="h-32 bg-slate-500 mt-10 w-full justify-center flex flex-col md:flex-row items-center text-slate-400 gap-5">
+    <div class="font-baion text-3xl ">Essegirent</div>
+    <p> Via Francesco Crispi, 266. Porto Empedocle</p>
+  </footer>
+
+</body>
+
+</html>
