@@ -67,7 +67,7 @@ cross.addEventListener("click", toggleMenu);
 
 function golist() {
 
-  if(new Date(from.value) > new Date(to.value) || from.value == "" || to.value == "" || new Date(from.value) < new Date() || new Date(to.value) < new Date()){
+  if(new Date(from.value) > new Date(to.value) || from.value == "" || to.value == "" || new Date(from.value).getTime() < new Date().setHours("00", "00", "00", "00") || new Date(to.value).getTime() < new Date().setHours("00", "00", "00", "00")){
     from.classList.add("border-2", "shadow-lg", "shadow-red-500", "border-red-500") 
     to.classList.add("border-2", "shadow-lg", "shadow-red-500", "border-red-500")
     return;
