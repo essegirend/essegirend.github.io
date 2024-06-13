@@ -49,8 +49,6 @@ dispreq.onload = function () {
 
 }
 
-
-
 function golist() {
   if(new Date(fromlist.value) > new Date(tolist.value) || (new Date(fromlist.value).getDate() + 1) < (new Date().getDate()) || fromlist.value == "" || tolist.value == ""){
     fromlist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500") 
@@ -66,8 +64,5 @@ function golist() {
 
 cerca.addEventListener("click", golist);
 cerca2.addEventListener("click", golist);
-
-
-
 
 dispreq.send();

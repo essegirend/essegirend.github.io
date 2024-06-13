@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+    <script src="./static/js/contatti.js" defer></script>
+    <script src="./static/js/condizioni.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCALMEfG6AZR-QsqnVJkLJYytc0EZOCZEc&callback=console.debug&libraries=maps,marker&v=beta"></script>
+
+
+</head>
+
+<body class="relative flex flex-col items-center w-screen  gap-10 justify-between">
+    <header class="md:flex hidden justify-around items-center p-10 w-full">
+        <h1 class="text-4xl font-baion"> Essegirent </h1>
+        <ul class="font-bold flex gap-5">
+            <li><a href="./">Home</a></li>
+            <li>Termini e condizioni</li>
+            <li>FAQ</li>
+            <li><a href="./contatti.html">Contatti</a></li>
+        </ul>
+    </header>
+
+
+    <header class="flex flex-col md:hidden justify-between items-start gap-5 w-full pt-10 px-10">
+        <div class="flex items-center justify-between w-full box">
+            <h1 class="text-3xl font-baion"> Essegirent </h1>
+            <svg id="cross" class="h-9 hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.9498 8.46447C17.3404 8.07394 17.3404 7.44078 16.9498 7.05025C16.5593 6.65973 15.9261 6.65973 15.5356 7.05025L12.0001 10.5858L8.46455 7.05025C8.07402 6.65973 7.44086 6.65973 7.05033 7.05025C6.65981 7.44078 6.65981 8.07394 7.05033 8.46447L10.5859 12L7.05033 15.5355C6.65981 15.9261 6.65981 16.5592 7.05033 16.9497C7.44086 17.3403 8.07402 17.3403 8.46455 16.9497L12.0001 13.4142L15.5356 16.9497C15.9261 17.3403 16.5593 17.3403 16.9498 16.9497C17.3404 16.5592 17.3404 15.9261 16.9498 15.5355L13.4143 12L16.9498 8.46447Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+            <svg id="burger" class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                        fill="#000000"></path>
+                </g>
+            </svg>
+        </div>
+
+        <ul style="display: none;" id="menu"
+            class="-translate-y-[200%] font-bold flex flex-col text-lg items-start gap-3 ">
+            <li><a href="./">Home</a></li>
+            <li>Prodotti</li>
+            <li>Sicurezza</li>
+            <li><a href="./contatti.html">Contatti</a></li>
+        </ul>
+    </header>
+
+    
+    <div class="w-[80%] max-w-[1000px] justify-start flex items-start flex-col  gap-10">
+        <h1 class="text-2xl font-bold bg-orange-200 p-5 rounded-2xl w-full">Termini e Condizioni</h1>
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5  rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Dati Personali e Patente</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                il cliente si impegna a non fornire false informazioni sulle proprie generalità, età, indirizzo e requisiti per la guida, esonerando espressamente il locatore da ogni conseguenza pregiudizievole dovesse scaturire in caso di dichiarazioni mendaci. Il cliente deve essere titolare di patente di guida valida per l’abilitazione alla guida del veicolo noleggiato, non essendo egli sottoposto a restrizioni di legge o provvedimenti dell’autorità giudiziaria o amministrativa. In caso il cliente proveniente da paesi extra UE sarà necessario esibire la patente internazionale, purché lo Stato di provenienza sia firmatario di una delle Convenzioni in materia di guida a cui aderisce l’Italia, ovvero la Convenzione di Ginevra del 1949 o quella di Vienna del 1968. I cittadini di Stati che non siano firmatari di nessuna delle due Convenzioni potranno guidare in Italia se in possesso della propria patente nazionale di guida e di una copia tradotta della stessa da richiedere presso l’ambasciata italiana nel paese di appartenenza o presso ambasciata e consolati del proprio paese in Italia.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Condizioni di Utilizzo</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                Unicamente il cliente è autorizzato alla guida dello scooter, pertanto egli si assume ogni rischio e responsabilità in caso di affidamento della guida del mezzo a terzi ed anche per gli altri effetti dell’art. 116 comma XII del Codice della Strada relativo all’affidamento a persona sprovvista di patente di guida. È tassativamente vietato il sub-noleggio del mezzo a terzi sotto qualsiasi forma. Inoltre, il cliente non potrà in alcun caso utilizzare o consentire che il mezzo venga utilizzato (a)per il trasporto di cose e/o persone a fini commerciali; (b)per spingere o trainare veicoli come rimorchi o altre cose; (c)sotto l’influssi di alcoolici, droghe, allucinogeni o qualsiasi altra sostanza in grado di menomare lo stato di coscienza e vigilanza; (d) per scopi contrari alla legge. Il cliente è tenuto ad utilizzare tutti i dispositivi antifurto dei quali è dotato il veicolo ogni qualvolta questo venga parcheggiato e lasciato incustodito. Il Cliente si assume l’obbligo di non fornire il mezzo noleggiato con carburante diverso da quello previsto; di non effettuare e/o far effettuare ad altri interventi di riparazione senza il consenso del Locatore; di sostituire a sue spese, in caso di forature, i pneumatici danneggiati. Non è ammessa la restituzione del mezzo con pneumatici riparati. Il Cliente è autorizzato a circolare solo ed esclusivamente nel territorio di Agrigento e Provincia fatta eccezione per il territorio di LAMPEDUSA e LINOSA per i quali si fa assoluto divieto di trasferire i veicoli oggetto di noleggio. In violazione di tale clausola, il cliente sarà tenuto al pagamento di eventuali spese di recupero che dovessero essere necessarie.  Il cliente è responsabile della normale circolazione del veicolo nonché del suo corretto uso e della manutenzione ordinaria.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Norme del Vigente Codice della Strada</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                il cliente dichiara di essere a conoscenza delle norme del vigente Codice della Strada. In ogni caso, ad abundantiam, il locatore ha informato il cliente sulle principali norme con particolare riferimento alla disciplina legislativa sull’uso del casco, sui limiti di velocità e sulle conseguenze derivanti dalla loro inosservanza.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Assicurazione</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                Essegirent ha fornito al cliente copia del contratto assicurativo (All. A), e quindi il cliente dichiara di conoscere, accettare e impegnarsi a rispettare le condizioni previste dalla polizza di assicurazione. Il motoveicolo noleggiato è coperto assicurazione sulla responsabilità civile.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Limitazioni di Responsabilità</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                Nei limiti previsti dalla legge, il locatore non potrà essere ritenuto responsabile, ed il cliente rinuncia per sé e per i propri eredi o aventi causa ad avanzare ogni e qualsivoglia pretesa nei confronti del locatore per qualsiasi danno subito dal cliente o da terzi, in quanto derivante dall’utilizzazione del mezzo noleggiato, o per perdita o danni a cose di proprietà del cliente o di terzi lasciate nel o sul veicolo.
+              </p>
+            </div>
+        </div>
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Addebiti</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                il cliente pagherà o rimborserà al Locatore su richiesta dello stesso l’ammontare: degli addebiti in caso di furto o incendio, nella misura di € 1.000,00 per scooter di cc 125; dell’addebito di eventuali multe, penalità, spese di giudizio o relativi costi di recupero del credito derivanti dall’utilizzazione del motoveicolo durante il noleggio. In questo caso il Locatore invierà al Cliente, via raccomandata a/r la fattura con allegati copia della multa e del contratto di noleggio. Il cliente sarà tenuto a saldare la fattura nel termine di 10 giorni dal ricevimento della stessa. Dell’addebito, in caso di fermo amministrativo, della tariffa giornaliera maggiorata del 25% per ogni giornata in cui il mezzo dovrà stare fermo. Dell’addebito, in caso di superamento della soglia per il chilometraggio limitato, pari a 0,30 euro per ogni km in più percorso.
+              </p>
+            </div>
+        </div>
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Restituzione del Mezzo</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                il Cliente si impegna a riconsegnare il mezzo e le relative dotazioni alla data e ora concordate tra le parti prima dell’inizio del noleggio, nelle stesse condizioni di consegna, e pertanto si assume l’obbligo di risarcire danni derivanti dal rifornimento con carburante diverso da quello previsto per mezzo noleggiato, e i danni derivanti da interventi di riparazione eseguiti dalla circolazioni del mezzo nonostante la presenza di guasti e/o di pneumatici danneggiati o riparati. Il Cliente sarà ritenuto direttamente responsabile in caso di furto e/o incendio del motoveicolo noleggiato. Il Locatore non sarà tenuto a restituire denaro al Cliente in caso di rilascio anticipato del mezzo rispetto alla data e ora pattuite per la fine del noleggio.
+              </p>
+            </div>
+        </div>
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Sinistri</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                qualora si verifichi un sinistro, il Cliente si obbliga a informare immediatamente per telefono il Locatore, trasmettendogli nelle successive 24 ore una relazione dettagliata completa sul modulo accluso ai documenti del veicolo (modello CID); informare la più vicina autorità di polizia, non rilasciare dichiarazioni di responsabilità in caso di incertezza sulla dinamica del sinistro, prendere nota dei nomi e degli indirizzi delle parti e dei testimoni; fornire al Locatore qualsiasi altra notizia utile; seguire le istruzioni che il Locatore fornirà relativamente alla custodia o alle riparazioni del veicolo.
+              </p>
+            </div>
+        </div>
+
+        <div class="w-full flex">
+            <div class="h-auto w-full max-w-[1000px] border-2 flex flex-col items-center p-5 rounded-xl justify-between gap-10 boxes">
+              <div class="flex items-center justify-between w-full">
+                <div class="text-slate-700 font-bold">Penali e Samrrimento Accessori</div>
+                <svg class="open h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill="#0F0F0F"></path> </g></svg>
+              </div>
+
+              <p class="text-justify corpo hidden">
+                Chiavi € 50,00; Documenti di circolazione € 350,00; casco € 45,00; Antifurto € 25,00; RESTITUZIONE DEL MEZZO SENZA IL PIENO DI CARBURANTE: € 20,00; MANCATO RIENTRO ALL’ORA PATTUITA: dopo un’ora di ritardo: tariffa di un giorno; dopo un giorno di ritardo: tariffa giornaliera maggiorata del 15% per ogni giornata della prima settimana; a partire dalla prima giornata della seconda settimana si pagherà la tariffa giornaliera maggiorata del 25%.
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative">
+        <a class="cursor-pointer" href="https://wa.me/3283411322" ><button   class="z-20 text-white flex flex-col shrink-0 grow-0 justify-around 
+                            fixed bottom-0  right-5 rounded-lg
+                            mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10">
+          <div class="p-4 rounded-full border-4 border-white bg-orange-400">
+            <svg class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z"
+                  stroke="#ffffff" stroke-width="1.5"></path>
+                <path opacity="0.5" d="M8 10.5H16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+                <path opacity="0.5" d="M8 14H13.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+              </g>
+            </svg>
+            <path fill-rule="evenodd"
+              d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+              clip-rule="evenodd"></path>
+            </svg>
+          </div>
+    
+        </button> </a>
+    </div>
+
+    <footer
+        class="h-32 -mb-12 bottom-0 bg-slate-500 mt-10 w-full justify-center flex flex-col md:flex-row items-center text-slate-400 gap-5">
+        <div class="font-baion text-3xl ">Essegirent</div>
+        <p> Via Francesco Crispi, 266. Porto Empedocle</p>
+    </footer>
+
+</body>
+
+</html>
