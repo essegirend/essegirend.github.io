@@ -72,8 +72,8 @@ function golist() {
     to.classList.add("outline-2" , "shadow-lg", "shadow-red-500", "border-red-500")
     return;
   }
-  let alve = new URL("https://shy-neon.github.io/list.html");
-  //let alve = new URL("http://127.0.0.1:5501/list.html");
+  //let alve = new URL("https://shy-neon.github.io/list.html");
+  let alve = new URL("http://127.0.0.1:5500/list.html");
   alve.searchParams.append('inizio', from.value.toString());
   alve.searchParams.append('fine', to.value.toString());
   window.location.href = alve.toString();
