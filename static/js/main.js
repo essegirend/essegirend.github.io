@@ -67,13 +67,13 @@ cross.addEventListener("click", toggleMenu);
 
 function golist() {
 
-  if(new Date(from.value) > new Date(to.value) || (new Date(from.value).getDate() ) < (new Date().getDate()) || from.value == "" || to.value == "" ){
-    from.classList.add("outline-2" , "shadow-lg", "shadow-red-500", "border-red-500") 
-    to.classList.add("outline-2" , "shadow-lg", "shadow-red-500", "border-red-500")
+  if(new Date(from.value) > new Date(to.value) || from.value == "" || to.value == "" || new Date(from.value) < new Date() || new Date(to.value) < new Date()){
+    from.classList.add("border-2", "shadow-lg", "shadow-red-500", "border-red-500") 
+    to.classList.add("border-2", "shadow-lg", "shadow-red-500", "border-red-500")
     return;
   }
-  let alve = new URL("https://shy-neon.github.io/list.html");
-  //let alve = new URL("http://127.0.0.1:5500/list.html");
+  //let alve = new URL("https://shy-neon.github.io/list.html");
+  let alve = new URL("http://127.0.0.1:5500/list.html");
   alve.searchParams.append('inizio', from.value.toString());
   alve.searchParams.append('fine', to.value.toString());
   window.location.href = alve.toString();
