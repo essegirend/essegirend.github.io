@@ -50,7 +50,7 @@ dispreq.onload = function () {
 }
 
 function golist() {
-  if(new Date(fromlist.value) > new Date(tolist.value) || fromlist.value == "" || tolist.value == "" || new Date(fromlist.value) < new Date() || new Date(tolist.value) < new Date()){
+  if(new Date(fromlist.value) > new Date(tolist.value) || fromlist.value == "" || tolist.value == "" || new Date(fromlist.value).getTime() < new Date().setHours("00", "00", "00", "00") || new Date(tolist.value).getTime() < new Date().setHours("00", "00", "00", "00")){
     fromlist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500") 
     tolist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500")
     return;
