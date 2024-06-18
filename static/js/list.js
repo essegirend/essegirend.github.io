@@ -29,6 +29,13 @@ dispreq.open('GET', 'https://gisacolor.it/veicles/disponibili' + location.search
 dispreq.responseType = 'json'
 var list = dispreq.response
 
+thisLocation = new URL(location).searchParams
+
+
+
+let alve = new URL("https://shy-neon.github.io/list.html");
+
+
 dispreq.onload = function () {
   list = dispreq.response
 
@@ -44,6 +51,12 @@ dispreq.onload = function () {
     productList.children[i].getElementsByClassName("posti")[0].innerHTML = list[i].posti;
     productList.children[i].getElementsByClassName("eta")[0].innerHTML = list[i].minAnni;
     productList.children[i].getElementsByClassName("totale")[0].innerHTML = list[i].price * Math.abs(((new Date(interval.fine)- new Date(interval.inizio))/86400000) + 1) + " €";
+    let sorta = new URL("http://127.0.0.1:5500/detail.html");
+    sorta.searchParams.append('inizio', fromlist.value.toString());
+    sorta.searchParams.append('fine', tolist.value.toString());
+    sorta.searchParams.append("name", list[i].name)
+    sorta.searchParams.append("price", list[i].price * Math.abs(((new Date(interval.fine)- new Date(interval.inizio))/86400000) + 1).toString())
+    productList.children[i].getElementsByClassName("selected")[0].href = sorta;
     console.log(new Date(interval.fine).getDate() - new Date(interval.inizio).getDate())
   }
 
@@ -55,7 +68,7 @@ function golist() {
     tolist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500")
     return;
   }
-  let alve = new URL("https://shy-neon.github.io/list.html");
+  
   //let alve = new URL("http://127.0.0.1:5500/list.html");
   alve.searchParams.append('inizio', fromlist.value.toString());
   alve.searchParams.append('fine', tolist.value.toString());
