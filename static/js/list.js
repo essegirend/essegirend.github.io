@@ -59,7 +59,6 @@ dispreq.onload = function () {
     productList.children[i].getElementsByClassName("selected")[0].href = sorta;
     console.log(new Date(interval.fine).getDate() - new Date(interval.inizio).getDate())
   }
-
 }
 
 function golist() {

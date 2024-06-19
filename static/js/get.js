@@ -9,7 +9,7 @@ var disponibiliOggi = disp.response
 oggi.onload = function () {
   list = oggi.response
 
-  for (var i = 0; i < list.length - 1; i++) {
+  for (var i = 0; i < list.length; i++) {
     oggiView.append(product.cloneNode(true));
   }
 

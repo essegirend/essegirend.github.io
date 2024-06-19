@@ -38,9 +38,10 @@ let sorta = new URL("https://shy-neon.github.io/detail.html");
 disp1.onload = function () {
   list = disp1.response
 
-  for (var i = 0; i < list.length - 1; i++) {
+  for (var i = 0; i < list.length; i++) {
     if(list[i].name == interval.name.replace('+', ' ')) {
         image[0].src = list[i].image
+        console.log(list[i].image);
         image[1].src = list[i].image
         console.log(list[i].image)
     }
