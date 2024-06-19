@@ -46,9 +46,6 @@ disp1.onload = function () {
         console.log(list[i].image)
     }
   }
-
-
-
 }
 
 disp1.send()
