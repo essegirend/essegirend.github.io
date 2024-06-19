@@ -73,7 +73,7 @@ function golist() {
     return;
   }
   //let alve = new URL("https://shy-neon.github.io/list.html");
-  let alve = new URL("http://127.0.0.1:5500/list.html");
+  let alve = new URL("https://shy-neon.github.com/list.html");
   alve.searchParams.append('inizio', from.value.toString());
   alve.searchParams.append('fine', to.value.toString());
   window.location.href = alve.toString();
