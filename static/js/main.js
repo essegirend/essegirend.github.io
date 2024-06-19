@@ -1,4 +1,4 @@
-const { red } = require("color-name");
+
 
 
 const oggi = new XMLHttpRequest();
