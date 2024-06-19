@@ -29,9 +29,9 @@ thisLocation = new URL(location).searchParams
 
 
 
-let alve = new URL("https://essegirent.com/ack.html");
-let nalve = new URL("https://essegirent.com/nack.html");
-let sorta = new URL("https://essegirent.com/detail.html");
+let alve = new URL("https://www.essegirent.com/ack.html");
+let nalve = new URL("https://www.essegirent.com/nack.html");
+let sorta = new URL("https://www.essegirent.com/detail.html");
 
 
 
