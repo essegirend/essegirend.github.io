@@ -33,7 +33,7 @@ thisLocation = new URL(location).searchParams
 
 
 
-let alve = new URL("https://shy-neon.github.io/list.html");
+let alve = new URL("https://essegirent.com/list.html");
 
 
 dispreq.onload = function () {
@@ -51,7 +51,7 @@ dispreq.onload = function () {
     productList.children[i].getElementsByClassName("posti")[0].innerHTML = list[i].posti;
     productList.children[i].getElementsByClassName("eta")[0].innerHTML = list[i].minAnni;
     productList.children[i].getElementsByClassName("totale")[0].innerHTML = list[i].price * Math.abs(((new Date(interval.fine)- new Date(interval.inizio))/86400000) + 1) + " €";
-    let sorta = new URL("https://shy-neon.github.io/detail.html");
+    let sorta = new URL("https://essegirent.com/detail.html");
     sorta.searchParams.append('inizio', fromlist.value.toString());
     sorta.searchParams.append('fine', tolist.value.toString());
     sorta.searchParams.append("name", list[i].name)
