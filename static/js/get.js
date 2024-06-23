@@ -18,6 +18,8 @@ oggi.onload = function () {
     oggiView.children[i].getElementsByClassName("price")[0].innerHTML = list[i].price + "€";
     oggiView.children[i].getElementsByClassName("name")[0].innerHTML = list[i].name;
   }
+  
+  oggiView.removeChild(oggiView.lastChild);
 }
 
 oggi.send();

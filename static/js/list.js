@@ -63,8 +63,10 @@ dispreq.onload = function () {
 
 function golist() {
   if(new Date(fromlist.value) > new Date(tolist.value) || fromlist.value == "" || tolist.value == "" || new Date(fromlist.value).getTime() < new Date().setHours("00", "00", "00", "00") || new Date(tolist.value).getTime() < new Date().setHours("00", "00", "00", "00")){
-    fromlist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500") 
-    tolist.classList.add("outline-2" , "shadow-md", "shadow-red-500", "border-red-500")
+    fromlist.style.borderColor = "red";
+    tolist.style.borderColor = "red";
+    fromlist.style.backgroundColor = "#ffbfc2";
+    tolist.style.backgroundColor = "#ffbfc2";
     return;
   }
   
