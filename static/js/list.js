@@ -43,7 +43,7 @@ dispreq.onload = function () {
 
   if(list.length == 0){
     placeholder.classList.remove("hidden")
-    list.classList.add("hidden")
+    productList.classList.add("hidden")
     return;
   }
 
