@@ -33,11 +33,16 @@ thisLocation = new URL(location).searchParams
 
 
 
-let alve = new URL("https://essegirent.com/list.html");
+let alve = new URL("https://www.essegirent.com/list.html");
 
 
 dispreq.onload = function () {
   list = dispreq.response
+
+  if(list.length == 0){
+    productList.innerHTML = ""
+    return;
+  }
 
   for (var i = 0; i < list.length - 1; i++) {
     productList.append(product[0].cloneNode(true));

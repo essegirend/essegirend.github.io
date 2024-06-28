@@ -1083,10 +1083,6 @@ input:checked + .toggle-bg {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .inset-0 {
   inset: 0px;
 }
@@ -1142,10 +1138,6 @@ input:checked + .toggle-bg {
 
 .z-50 {
   z-index: 50;
-}
-
-.m-1 {
-  margin: 0.25rem;
 }
 
 .my-2 {
@@ -1212,6 +1204,10 @@ input:checked + .toggle-bg {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.-ml-3 {
+  margin-left: -0.75rem;
 }
 
 .block {
@@ -1298,10 +1294,6 @@ input:checked + .toggle-bg {
   height: 24rem;
 }
 
-.h-\[180px\] {
-  height: 180px;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -1327,6 +1319,10 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1347,24 +1343,12 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
 
 .w-\[200px\] {
   width: 200px;
-}
-
-.w-\[280px\] {
-  width: 280px;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .w-\[350px\] {
@@ -1655,10 +1639,6 @@ input:checked + .toggle-bg {
   overflow-x: scroll;
 }
 
-.whitespace-nowrap {
-  white-space: nowrap;
-}
-
 .text-nowrap {
   text-wrap: nowrap;
 }
@@ -1705,19 +1685,6 @@ input:checked + .toggle-bg {
 .rounded-s-lg {
   border-start-start-radius: 0.5rem;
   border-end-start-radius: 0.5rem;
-}
-
-.rounded-t-xl {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
-.rounded-br-lg {
-  border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-tl-lg {
-  border-top-left-radius: 0.5rem;
 }
 
 .border {
@@ -1858,11 +1825,6 @@ input:checked + .toggle-bg {
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
@@ -1977,10 +1939,6 @@ input:checked + .toggle-bg {
   padding-bottom: 1.25rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2071,8 +2029,16 @@ input:checked + .toggle-bg {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .leading-6 {
@@ -2522,10 +2488,6 @@ input:checked + .toggle-bg {
 
   .md\:max-w-\[1000px\] {
     max-width: 1000px;
-  }
-
-  .md\:snap-start {
-    scroll-snap-align: start;
   }
 
   .md\:flex-row {
