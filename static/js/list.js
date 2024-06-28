@@ -3,6 +3,9 @@ const dispreq = new XMLHttpRequest();
 let fromlist = document.getElementById("from-list");
 let tolist = document.getElementById("to-list");
 
+let placeholder = document.getElementById("placeholderEmpty");
+let productlist = document.getElementById("productView");
+
 let interval = getJsonFromUrl(search);
 fromlist.value = interval.inizio;
 tolist.value = interval.fine;
@@ -40,7 +43,8 @@ dispreq.onload = function () {
   list = dispreq.response
 
   if(list.length == 0){
-    productList.innerHTML = ""
+    productList.classList.add = "hidden"
+    placeholder.classList.add = "flex"
     return;
   }
 

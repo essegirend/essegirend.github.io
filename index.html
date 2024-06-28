@@ -160,21 +160,40 @@
   </div>
   </div>
 
-  <div class="font-bold text-3xl flex flex-col max-w-[1000px] justify-start w-[100%] mt-5 items-start">
+  <div id="placeholderEmpty" class="font-bold text-3xl hidden flex-col max-w-[1000px] justify-start w-[100%] mt-5 items-start">
+    <h2 class="ml-[10%] md:ml-0 md:max-w-[1000px]">
+      Disponibili in negozio 
+    </h2>
+    <p class="font-normal flex justify-center text-slate-500 text-xl w-full pt-20">Nessun Veicolo disponibile oggi</p>
+
+  </div>
+
+  <div id="productView" class="font-bold text-3xl flex flex-col max-w-[1000px] justify-start w-[100%] mt-5 items-start">
     <h2 class="ml-[10%] md:ml-0 md:max-w-[1000px]">
       Disponibili in negozio 
     </h2>
 
+    
+
     <div
-      class="flex w-full max-w-[1000px] mt-10 flex-col text-justify md:items-start gap-24 overflow-visible items-center justify-center ">
+      class=" w-full max-w-[1000px]  mt-10 flex-col text-justify md:items-start gap-24 overflow-visible items-center justify-center ">
       <div id="scroll"
         class="lg:w-[1000px] w-full flex snap-mandatory  gap-3 overflow-x-scroll snap-x md:before:p-0 before:p-10 after:p-10 md:[mask-image:_linear-gradient(to_right,transparent_0,_black_3px,_black_calc(100%-64px),transparent_100%)] md:scrollbar ">
 
-        <div class="h-32 bg-slate-200 flex justify-center items-center p-10 rounded-xl">
-          <p class="font-normal  text-xl">Nessun Veicolo disponibile oggi</p>
-
+        <div id="product"
+          class="border-2 transform duration-300  object-fill w-96 rounded-2x md:snap-start snap-center rounded-xl m-1">
+          <div class="flex items-center justify-center overflow-hidden w-[280px] rounded-t-xl">
+            <img class="image  h-[180px] w-auto object-contain" src="./static/images/veicle/clx.jpg" alt="">
+          </div>
+          <div class="flex justify-between items-center h-16">
+            <div id=" blogpostTitle" class="name pl-10 font-bold text-xl text-slate-500 whitespace-nowrap">Btwin e-bike
+            </div>
+            <button
+              class="price text-white w-[30%] h-full text-xl p-2  bg-orange-400  rounded-tl-lg rounded-br-lg">35€</button>
+          </div>
         </div>
 
+        
 
       </div>
     </div>

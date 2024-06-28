@@ -5,14 +5,15 @@ oggi.open('GET', 'https://gisacolor.it/veicles/oggi');
 oggi.responseType = 'json'
 var disponibiliOggi = disp.response
 
+let placeholder = document.getElementById("placeholderEmpty");
+let productlist = document.getElementById("productView");
 
 oggi.onload = function () {
   list = oggi.response
 
   if(list.length == 0){
-
-    
-    
+    placeholder.classList.remove("hidden");
+    productlist.classList.add("hidden");
     return
   }
 
