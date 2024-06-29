@@ -14,123 +14,133 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCALMEfG6AZR-QsqnVJkLJYytc0EZOCZEc&callback=console.debug&libraries=maps,marker&v=beta"></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11157098525"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-11157098525');
-        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11157098525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11157098525');
+    </script>
 </head>
 
 <body class=" flex flex-col items-center gap-10 ">
-    <header class="md:flex hidden justify-around items-center p-10 w-full">
-        <h1 class="text-4xl font-baion"> Essegirent </h1>
-        <ul class="font-bold flex gap-5">
-            <li><a href="./">Home</a></li>
-            <li><a href="./condizioni.html">Termini e Condizioni</a></li>
-            <li>FAQ</li>
-            <li><a href="./contatti.html">Contatti</a></li>
-        </ul>
-    </header>
+    
+    <div class="w-full flex flex-col items-center bg-slate-100">
+        <header class="md:flex hidden justify-around items-center p-10 w-full">
+            <h1 class="text-4xl font-baion"> Essegirent </h1>
+            <ul class="font-bold flex gap-5">
+                <li><a href="./">Home</a></li>
+                <li><a href="./condizioni.html">Termini e Condizioni</a></li>
+                <li>FAQ</li>
+                <li><a href="./contatti.html">Contatti</a></li>
+            </ul>
+        </header>
 
-
-    <header class="flex flex-col md:hidden justify-between items-start gap-5 w-full pt-10 px-10">
-        <div class="flex items-center justify-between w-full">
-            <h1 class="text-3xl font-baion"> Essegirent </h1>
-            <svg id="cross" class="h-9 hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M16.9498 8.46447C17.3404 8.07394 17.3404 7.44078 16.9498 7.05025C16.5593 6.65973 15.9261 6.65973 15.5356 7.05025L12.0001 10.5858L8.46455 7.05025C8.07402 6.65973 7.44086 6.65973 7.05033 7.05025C6.65981 7.44078 6.65981 8.07394 7.05033 8.46447L10.5859 12L7.05033 15.5355C6.65981 15.9261 6.65981 16.5592 7.05033 16.9497C7.44086 17.3403 8.07402 17.3403 8.46455 16.9497L12.0001 13.4142L15.5356 16.9497C15.9261 17.3403 16.5593 17.3403 16.9498 16.9497C17.3404 16.5592 17.3404 15.9261 16.9498 15.5355L13.4143 12L16.9498 8.46447Z"
-                        fill="#000000"></path>
-                </g>
-            </svg>
-            <svg id="burger" class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
-                        fill="#000000"></path>
-                </g>
-            </svg>
-        </div>
-
-        <ul style="display: none;" id="menu"
-            class="-translate-y-[200%] font-bold flex flex-col text-lg items-start gap-3 ">
-            <li><a href="./">Home</a></li>
-            <li>Prodotti</li>
-            <li><a href="./condizioni.html">Termini e condizioni</a></li>
-            <li><a href="./contatti.html">Contatti</a></li>
-        </ul>
-    </header>
-
-
-    <div class="h-64 w-[80%] 0max-w-[1000px] rounded-xl flex items-center gap-10 justify-center ">
-        <div
-            class="h-auto w-[400px] md:h-36 bg-slate-200 flex flex-col gap-10 rounded-xl justify-evenly hover:outline-2 hover:outline-orange-200 gap-5 p-5">
-            <div class="flex w-full h-fit items-center justify-between">
-                <div class="flex w-full text-slate-500  justify-between ">
-                    <p class="text-xl font-bold pl-2  flex items-center justify-center rounded-full">1. Data del
-                        noleggio</p>
-                    <p id="cerca2"
-                        class="p-2 cursor-pointer hidden md:block bg-orange-400 text-white rounded-xl justify-center px-3">
-                        cerca</p>
-                </div>
-            </div>
-
-            <div class="flex gap-1 font  items-center">
-                <div class="relative max-w-[200px]">
-                    <input id="from-list" datepicker-orientation="bottom" inline-datepicker datepicker-autoselect-today
-                        datepicker-autohide readonly type="text"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
-                        placeholder="inizio">
-                </div>
-
-                <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <header class="flex flex-col md:hidden justify-between items-start gap-5 w-full pt-10 px-10">
+            <div class="flex items-center justify-between w-full">
+                <h1 class="text-3xl font-baion"> Essegirent </h1>
+                <svg id="cross" class="h-9 hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.9498 8.46447C17.3404 8.07394 17.3404 7.44078 16.9498 7.05025C16.5593 6.65973 15.9261 6.65973 15.5356 7.05025L12.0001 10.5858L8.46455 7.05025C8.07402 6.65973 7.44086 6.65973 7.05033 7.05025C6.65981 7.44078 6.65981 8.07394 7.05033 8.46447L10.5859 12L7.05033 15.5355C6.65981 15.9261 6.65981 16.5592 7.05033 16.9497C7.44086 17.3403 8.07402 17.3403 8.46455 16.9497L12.0001 13.4142L15.5356 16.9497C15.9261 17.3403 16.5593 17.3403 16.9498 16.9497C17.3404 16.5592 17.3404 15.9261 16.9498 15.5355L13.4143 12L16.9498 8.46447Z"
+                            fill="#000000"></path>
                     </g>
                 </svg>
+                <svg id="burger" class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+                            fill="#000000"></path>
+                    </g>
+                </svg>
+            </div>
 
-                <div class="relative ">
-                    <input id="to-list" datepicker-orientation="bottom" inline-datepicker datepicker-autoselect-today
-                        datepicker-autohide readonly type="text"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
-                        placeholder="inizio">
+            <ul style="display: none;" id="menu"
+                class="-translate-y-[200%] font-bold flex flex-col text-lg items-start gap-3 ">
+                <li><a href="./">Home</a></li>
+                <li>Prodotti</li>
+                <li><a href="./condizioni.html">Termini e condizioni</a></li>
+                <li><a href="./contatti.html">Contatti</a></li>
+            </ul>
+        </header>
+
+
+        <div class="md:h-56 h-64 w-[80%] 0max-w-[1000px] rounded-xl flex items-center gap-10 justify-center ">
+            <div
+                class="h-auto w-[400px] md:h-36 bg-slate-200 flex flex-col gap-10 rounded-xl justify-evenly hover:outline-2 hover:outline-orange-200 gap-5 p-5">
+                <div class="flex w-full h-fit items-center justify-between">
+                    <div class="flex w-full text-slate-500  justify-between ">
+                        <p class="text-xl font-bold pl-2  flex items-center justify-center rounded-full">1. Data del
+                            noleggio</p>
+                        <p id="cerca2"
+                            class="p-2 cursor-pointer hidden md:block bg-orange-400 text-white rounded-xl justify-center px-3">
+                            cerca</p>
+                    </div>
                 </div>
+
+                <div class="flex gap-1 font  items-center">
+                    <div class="relative max-w-[200px]">
+                        <input id="from-list" datepicker-orientation="bottom" inline-datepicker
+                            datepicker-autoselect-today datepicker-autohide readonly type="text"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
+                            placeholder="inizio">
+                    </div>
+
+                    <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+
+                    <div class="relative ">
+                        <input id="to-list" datepicker-orientation="bottom" inline-datepicker
+                            datepicker-autoselect-today datepicker-autohide readonly type="text"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-[16px] rounded-lg focus:ring-orange-400 focus:border-orange-400 block w-full p  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-400 dark:focus:border-orange-400"
+                            placeholder="inizio">
+                    </div>
+                </div>
+
+                <p id="cerca"
+                    class="p-2 cursor-pointer  md:hidden bg-orange-400 text-white rounded-xl justify-center px-3">
+                    cerca</p>
+
             </div>
 
-            <p id="cerca" class="p-2 cursor-pointer  md:hidden bg-orange-400 text-white rounded-xl justify-center px-3">
-                cerca</p>
-
-        </div>
-
-        <div
-            class="h-36  bg-slate-200 w-[200px] rounded-lg border-2 border-orange-400 p-5 justify-between hidden md:block">
-            <div class="flex w-full text-slate-500">
-                <div class="text-xl font-bold h-10  flex items-center justify-center rounded-full">2. Veicolo</div>
+            <div
+                class="h-36  bg-slate-200 w-[200px] rounded-lg border-2 border-orange-400 p-5 justify-between hidden md:block">
+                <div class="flex w-full text-slate-500">
+                    <div class="text-xl font-bold h-10  flex items-center justify-center rounded-full">2. Veicolo</div>
+                </div>
+                <div>seleziona un veicolo</div>
             </div>
-            <div>seleziona un veicolo</div>
-        </div>
 
-        <div class="h-36  bg-slate-200 w-[200px] rounded-lg border- p-5 justify-between hidden md:block">
-            <div class="flex w-full text-slate-500">
-                <div class="text-xl font-bold h-10  flex items-center justify-center rounded-full">3. Checkout</div>
+            <div class="h-36  bg-slate-200 w-[200px] rounded-lg border- p-5 justify-between hidden md:block">
+                <div class="flex w-full text-slate-500">
+                    <div class="text-xl font-bold h-10  flex items-center justify-center rounded-full">3. Checkout</div>
+                </div>
+                <div class="font-bold text-2xl">0,00€</div>
             </div>
-            <div class="font-bold text-2xl">0,00€</div>
         </div>
     </div>
 
-    <div id="placeholder" class="flex hidden flex-col w-[70%] max-w-[900px] text-xl font-normal items-center justify-center py-10" id="placeholder">
+
+    <h2 class="text-2xl font-bold">Scegli un veicolo</h2>
+
+    <div id="placeholder"
+        class="flex hidden flex-col w-[70%] max-w-[900px] text-xl font-normal items-center justify-center py-10"
+        id="placeholder">
         <p class="text-center text-slate-500">Nessun veicolo disponibile per le date selezionate</p>
     </div>
+
+
 
     <div id="list" class="flex flex-col w-[80%] max-w-[1000px]  gap-10">
         <div
@@ -268,4 +278,5 @@
             </button> </a>
     </div>
 </body>
+
 </html>`
