@@ -14,18 +14,18 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCALMEfG6AZR-QsqnVJkLJYytc0EZOCZEc&callback=console.debug&libraries=maps,marker&v=beta"></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11157098525"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-11157098525');
-        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11157098525"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11157098525');
+    </script>
 </head>
 
-<body class="h-full relative flex flex-col items-center w-screen  md:gap-5">
-   
+<body class="relative flex flex-col items-center w-screen h-screen md:gap-5">
+
     <div class="w-full flex flex-col items-center bg-slate-100">
         <header class="md:flex hidden justify-around items-center p-10 w-full">
             <h1 class="text-4xl font-baion"> Essegirent </h1>
@@ -36,8 +36,8 @@
                 <li><a href="./contatti.html">Contatti</a></li>
             </ul>
         </header>
-    
-    
+
+
         <header class="flex flex-col md:hidden justify-between items-start gap-5 w-full pt-10 px-10">
             <div class="flex items-center justify-between w-full">
                 <h1 class="text-3xl font-baion"> Essegirent </h1>
@@ -60,7 +60,7 @@
                     </g>
                 </svg>
             </div>
-    
+
             <ul style="display: none;" id="menu"
                 class="-translate-y-[200%] font-bold flex flex-col text-lg items-start gap-3 ">
                 <li><a href="./">Home</a></li>
@@ -69,8 +69,8 @@
                 <li><a href="./contatti.html">Contatti</a></li>
             </ul>
         </header>
-    
-    
+
+
         <div class="h-52 w-[80%] 0 max-w-[1000px] rounded-xl flex items-center justify-evenly gap-5">
             <div
                 class="h-auto w-[350px] md:h-36 bg-slate-200  flex-col gap-10 hidden md:flex rounded-xl justify-evenly hover:outline-2 hover:outline-orange-200 gap-5 p-5">
@@ -80,10 +80,10 @@
                             noleggio</p>
                     </div>
                 </div>
-    
+
                 <div class="flex gap-1 font-bold text-slate-400 px-2 items-center">
                     <p id="detailFrom" class="p-2 bg-white rounded-xl px-5">12/12/23</p>
-    
+
                     <svg class="h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -92,11 +92,11 @@
                                 stroke-linecap="round" stroke-linejoin="round"></path>
                         </g>
                     </svg>
-    
+
                     <p id="detailTo" class="p-2 bg-white rounded-xl px-5">12/12/23</p>
                 </div>
             </div>
-    
+
             <div
                 class="h-36  flex-row bg-slate-200 w-[400px] items-center rounded-lg border-2 px-7 p-5 hidden md:flex justify-between ">
                 <div class="h-full flex flex-col gap-5">
@@ -107,10 +107,10 @@
                     <div id="veicolo" class="text-xl font-bold overflow-hidden text-nowrap">seleziona un veicolo</div>
                 </div>
             </div>
-    
+
             <div class=" flex flex-col gap-1 h-36 bg-slate-200 border-2 border-orange-400 w-full p-7 rounded-lg">
                 <h2 class="block font-bold text-xl text-slate-500">3. Checkout</h2>
-    
+
                 <p id="price" class=" block font-bold text-2xl ">price</p>
                 <p class="text-orange-500 font-bold"> Pagamento tamite Bonifico</p>
             </div>
@@ -120,59 +120,68 @@
     <div class="w-[75%] max-w-[1000px] flex flex-col gap-10">
         <div class="flex flex-col md:flex-row items-center justify-between w-full md:gap-10">
             <div class=" flex flex-col gap-5 w-full mt-5">
-                
+
                 <h2 class="font-bold text-3xl ">Prenota</h2>
                 <img class="image h-[250px] object-contain md:hidden" src="./static/images/veicle/clx.jpg" alt="">
-                
-                <input id="" class="rounded-xl hidden h-12 focus:border-orange-400 focus:ring-0 w-full" type="text" placeholder="Nome">
-                <input id="nome" class="rounded-xl  h-12 focus:border-orange-400 focus:ring-0 w-full" type="text" placeholder="Nome">
-                <input  id="cognome" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="text" placeholder="Cognome">
-                <input  id="tel" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="tel" placeholder="333-12345678">
-                <input  id="mail" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="Email"
+
+                <input id="" class="rounded-xl hidden h-12 focus:border-orange-400 focus:ring-0 w-full" type="text"
+                    placeholder="Nome">
+                <input id="nome" class="rounded-xl  h-12 focus:border-orange-400 focus:ring-0 w-full" type="text"
+                    placeholder="Nome">
+                <input id="cognome" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="text"
+                    placeholder="Cognome">
+                <input id="tel" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="tel"
+                    placeholder="333-12345678">
+                <input id="mail" class="rounded-xl h-12 focus:border-orange-400 focus:ring-0" type="Email"
                     placeholder="mariorossi@example.it">
 
                 <div class="flex items-center gap-2"><input class="rounded-sm p-1" type="checkbox"
                         placeholder="email@example.com"> Ho letto Termini e condizioni</div>
                 <div class="w-full flex ml-1">
-                    <button
-                      id="prenota"  class="p-2 w-full bg-orange-400 rounded-2xl font-bold py-4 text-xl text-white mt-5">Prenota</button>
+                    <button id="prenota"
+                        class="p-2 w-full bg-orange-400 rounded-2xl font-bold py-4 text-xl text-white mt-5">Prenota</button>
                 </div>
             </div>
-            
+
             <div class="w-full">
-                <img class="image h-[320px] pb-10 object-contain hidden md:block" src="./static/images/veicle/clx.jpg" alt="">
+                <img class="image h-[320px] pb-10 object-contain hidden md:block" src="./static/images/veicle/clx.jpg"
+                    alt="">
             </div>
-        
+
         </div>
-        <p class="text-slate-500 p-5 mt-10 md:mt-0 border-2 border-yellow-100 rounded-xl"><b>ATTENZIONE</b> Per confermare la prenotazione è necessario effettuare un bonifico di importo pari all'intera cifra dovuta. Se nei quattro giorni successivi non verrà ricevuto il pagamento il mezzo tornerà prenotabile sul portale</p>
+        <p class="text-slate-500 p-5 mt-10 md:mt-0 border-2 border-yellow-100 rounded-xl"><b>ATTENZIONE</b> Per
+            confermare la prenotazione è necessario effettuare un bonifico di importo pari all'intera cifra dovuta. Se
+            nei quattro giorni successivi non verrà ricevuto il pagamento il mezzo tornerà prenotabile sul portale</p>
     </div>
 
     <div class="relative">
-        <a class="cursor-pointer" href="https://wa.me/393283411322" ><button   class="z-20 text-white flex flex-col shrink-0 grow-0 justify-around 
+        <a class="cursor-pointer" href="https://wa.me/393283411322"><button class="z-20 text-white flex flex-col shrink-0 grow-0 justify-around 
                             fixed bottom-0  right-5 rounded-lg
                             mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10">
-          <div class="p-4 rounded-full border-4 border-white bg-orange-400">
-            <svg class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z"
-                  stroke="#ffffff" stroke-width="1.5"></path>
-                <path opacity="0.5" d="M8 10.5H16" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
-                <path opacity="0.5" d="M8 14H13.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
-              </g>
-            </svg>
-            <path fill-rule="evenodd"
-              d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
-              clip-rule="evenodd"></path>
-            </svg>
-          </div>
-    
-        </button> </a>
-      </div>
+                <div class="p-4 rounded-full border-4 border-white bg-orange-400">
+                    <svg class="h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z"
+                                stroke="#ffffff" stroke-width="1.5"></path>
+                            <path opacity="0.5" d="M8 10.5H16" stroke="#ffffff" stroke-width="1.5"
+                                stroke-linecap="round"></path>
+                            <path opacity="0.5" d="M8 14H13.5" stroke="#ffffff" stroke-width="1.5"
+                                stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                    <path fill-rule="evenodd"
+                        d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                </div>
 
-      
+            </button> </a>
+    </div>
+
+
     <footer
         class="h-32  -mb-12 bottom-0 bg-slate-500 mt-10 w-full justify-center flex flex-col md:flex-row items-center text-slate-400 gap-5 py-10">
         <div class="font-baion text-3xl ">Essegirent</div>
