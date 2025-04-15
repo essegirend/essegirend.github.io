@@ -21,7 +21,7 @@ price.innerHTML = interval.price + " €"
 
 
 
-disp1.open('GET', 'https://gisacolor.it/veicles/disponibili' + location.search);
+disp1.open('GET', 'https://server.essegirent.com/veicles/disponibili' + location.search);
 disp1.responseType = 'json'
 var list = disp1.response
 
@@ -92,7 +92,7 @@ function prenota () {
 
 
   // Send the POST request using fetch
-  fetch("https://gisacolor.it/veicles/reservations", {
+  fetch("https://server.essegirent.com/veicles/reservations", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

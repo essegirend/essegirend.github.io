@@ -1,7 +1,7 @@
 let oggiView = document.getElementById("scroll");
 let product = document.getElementById("product");
 const disp = new XMLHttpRequest();
-oggi.open('GET', 'https://gisacolor.it/veicles/oggi');
+oggi.open('GET', 'https://server.essegirent.com/veicles/oggi');
 oggi.responseType = 'json'
 var disponibiliOggi = disp.response
 
@@ -35,7 +35,7 @@ oggi.send();
 
 console.log(review[1].getElementsByClassName("name"))
 
-disp.open('GET', 'https://gisacolor.it/reviews');
+disp.open('GET', 'https://server.essegirent.com/reviews');
 disp.responseType = 'json'
 var list = disp.response
 
