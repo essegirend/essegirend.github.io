@@ -1166,6 +1166,10 @@ input:checked + .toggle-bg {
   margin-top: -0.75rem;
 }
 
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1208,10 +1212,6 @@ input:checked + .toggle-bg {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.-mt-5 {
-  margin-top: -1.25rem;
 }
 
 .block {
@@ -1329,6 +1329,22 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
+.max-h-56 {
+  max-height: 14rem;
+}
+
+.min-h-12 {
+  min-height: 3rem;
 }
 
 .w-1\/2 {
@@ -1852,19 +1868,9 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-sky-500 {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
-.bg-rose-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 113 133 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -1925,6 +1931,10 @@ input:checked + .toggle-bg {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .px-10 {
@@ -1997,6 +2007,11 @@ input:checked + .toggle-bg {
   padding-bottom: 1.25rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2047,6 +2062,10 @@ input:checked + .toggle-bg {
 
 .text-start {
   text-align: start;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .align-middle {
@@ -2149,6 +2168,11 @@ input:checked + .toggle-bg {
   color: rgb(255 90 31 / var(--tw-text-opacity));
 }
 
+.text-slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
 .text-slate-400 {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
@@ -2174,42 +2198,13 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-blue-800 {
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(30 66 159 / var(--tw-text-opacity));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(118 169 250 / var(--tw-text-opacity));
-}
-
-.text-cyan-400 {
-  --tw-text-opacity: 1;
-  color: rgb(34 211 238 / var(--tw-text-opacity));
-}
-
-.text-cyan-800 {
-  --tw-text-opacity: 1;
-  color: rgb(21 94 117 / var(--tw-text-opacity));
-}
-
-.text-cyan-600 {
-  --tw-text-opacity: 1;
-  color: rgb(8 145 178 / var(--tw-text-opacity));
-}
-
-.text-slate-300 {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-opacity-90 {
   --tw-text-opacity: 0.9;
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -2220,20 +2215,8 @@ input:checked + .toggle-bg {
   opacity: 1;
 }
 
-.opacity-35 {
-  opacity: 0.35;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .opacity-75 {
   opacity: 0.75;
-}
-
-.opacity-85 {
-  opacity: 0.85;
 }
 
 .shadow {
@@ -2529,6 +2512,12 @@ input:checked + .toggle-bg {
   --tw-ring-color: rgb(255 138 76 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:mb-10 {
     margin-bottom: 2.5rem;
@@ -2582,6 +2571,10 @@ input:checked + .toggle-bg {
     height: auto;
   }
 
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -2604,6 +2597,14 @@ input:checked + .toggle-bg {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .md\:w-\[30\%\] {
+    width: 30%;
   }
 
   .md\:min-w-64 {
@@ -2630,6 +2631,10 @@ input:checked + .toggle-bg {
     align-items: flex-start;
   }
 
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -2654,6 +2659,14 @@ input:checked + .toggle-bg {
     overflow: hidden;
   }
 
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:pl-3 {
     padding-left: 0.75rem;
   }
@@ -2662,9 +2675,23 @@ input:checked + .toggle-bg {
     text-align: start;
   }
 
+  .md\:text-end {
+    text-align: end;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:\[mask-image\:_linear-gradient\(to_right\2c transparent_0\2c _black_3px\2c _black_calc\(100\%-64px\)\2c transparent_100\%\)\] {
